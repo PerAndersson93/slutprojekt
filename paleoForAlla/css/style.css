@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Rowdies-Regular";
+    src: url(/css/fonts/Rowdies-Regular.ttf);
+}
+
+@font-face {
+    font-family: "IndieFLower";
+    src: url(/css/fonts/IndieFlower-Regular.ttf);
+}
+
+/* Colors */
+
+html{
+    background-color: rgb(255, 255, 204);
+}
+
+h1, h2, nav ul li a, nav .active, main #secondaryNav ul li a{
+    color: rgb(58, 58, 58);
+}
+
+/* fonts */ 
+h1, h2, nav{
+    font-family: Rowdies-Regular;
+}
+
+p{
+    font-family: IndieFlower;
+}
+
+
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-size: 2rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+
+}
+
+.iframe-container {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.iframe-container iframe {
+    display: inline-block;
+}
+
+
+
+
+/* Nav*/
+nav{
+    font-size: 1.2rem;
+    max-width: 72rem;
+    width: 45%;
+    margin: 0 auto;
+}
+
+nav ul{
+    text-transform: uppercase;
+    display: flex;
+}
+
+nav ul li{
+    border-color: rgb(255, 255, 204);
+    border-style: solid;
+    border-width: 5px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    margin: 2rem;
+}
+
+/*nav a:hover, nav a:focus{
+    
+}*/
+
+nav ul > :hover, nav ul > :focus{
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(58, 58, 58, 0.5);
+}
+
+nav .active{
+    border-color: rgb(58, 58, 58);
+    border-style: solid;
+    border-width: 5px;
+}
+
+hr{
+    height: 0.3rem;
+    background-color: rgb(58, 58, 58);
+    margin: 2rem 0;
+
+}

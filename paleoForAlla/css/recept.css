@@ -1,0 +1,193 @@
+
+
+main #secondaryNav{
+    grid-area: nav;
+    font-size: 1.2rem;
+    font-family: Rowdies-Regular;
+    text-transform: uppercase;
+}
+
+main #secondaryNav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+main #secondaryNav ul li{
+    border-color: rgb(255, 255, 204);
+    border-style: solid;
+    border-width: 0.4rem;
+    margin: 0 0.4rem;
+}
+
+
+
+
+main #secondaryNav ul li a{
+    text-decoration: none;
+    margin: 2rem 0rem;
+}
+
+
+
+
+main #secondaryNav ul > :hover, nav ul > :focus{
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(58, 58, 58, 0.5);
+}
+
+main #secondaryNav .active{
+    border-color: rgb(58, 58, 58);
+    border-style: solid;
+    border-width: 5px;
+}
+
+/* content */
+
+main #recept{
+    grid-area: recept;
+}
+
+
+
+main h2{
+    grid-area: titel;
+}
+
+main{
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "nav nav nav nav nav"
+    "titel titel titel titel titel"
+    "recept recept recept recept recept"
+    "recept recept recept recept recept"
+    "recept recept recept recept recept"
+}
+
+
+
+
+main #recept p{
+    text-align: center;
+}
+
+h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 2.6rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+p{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/** Gör så här **/
+#GorSaHar #ingredienserTitel{
+    grid-area: ingredienserTitel;
+    font-family: Rowdies-Regular;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 2.6rem;
+    text-align: center;
+ 
+    margin-bottom: 2rem;
+
+}
+
+#GorSaHar ul{
+    grid-area: ingredienserLista;
+    font-family: IndieFlower;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+
+
+
+}
+
+#GorSaHar #gorSaHarTitel{
+    grid-area: gorSaHarTitel;
+    font-family: Rowdies-Regular;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 2.6rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+#GorSaHar p{
+    grid-area: gorSaHarText;
+}
+
+#GorSaHar{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "ingredienserTitel"
+    "ingredienserLista"
+    "gorSaHarTitel"
+    "gorSaHarText"
+  
+
+}
+
+
+
+
+
+
+/*   */
+@media(min-width:700px) {
+    main #secondaryNav ul li{
+        margin: 0 0.7rem;
+    }
+
+    p{
+        max-width: 36rem;
+    }
+}
+
+@media(min-width:1000px) {
+    p{
+        max-width: 50rem;
+    }
+
+    #GorSaHar{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "ingredienserTitel gorSaHarTitel gorSaHarTitel"
+        "ingredienserLista gorSaHarText  gorSaHarText"
+      
+    
+    }
+
+}
