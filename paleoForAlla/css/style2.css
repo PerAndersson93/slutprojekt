@@ -15,7 +15,7 @@ html{
     font-size: 105%;
 }
 
-h1, h2, nav ul li a, nav .active, main #secondaryNav ul li a{
+h1, h2, nav ul li a, nav .active, main #secondaryNav ul li a, table{
     color: rgb(58, 58, 58);
 }
 

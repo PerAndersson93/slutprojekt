@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Detta du kan äta - paleo för alla</title>
-        <meta charset="UTF-8"/> <!-- All text hanteras enligt denna teckenkodningen, t ex å,ä,ö -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
-        <link href="../../css/reset.css" rel="stylesheet" />
-        <link href="../../css/style2.css" rel="stylesheet" />
-        <script src="/assets/js/index.js" type="module"></script>
-    </head>
-    <body>
-        <div id="wrapper">
-            <header>
-                <h1>Paleo för alla</h1>
-            </header>
-            
-            <nav>
-                <ul>
-                    <li><a href="../../index.html">Hem</a></li>
-                    <li><a href="../historia.html">Historia</a></li>
-                    <li><a href="../recept/receptMiddag.html">Recept</a></li>
-                    <li class="active"><a href="kanAta.html">Livsmedel</a></li>
-                    <li><a href="../QandA.html">Q&A</a></li>
-                </ul>
-                <hr>
-            </nav>
 
-            <main>
-                <section>
-                    <header>
-                        <h2>Välkommen till sajten!</h2>
-                        <p>Pacific Trails Resort offers a special lodging experience on the California North Coast. 
-                            Relax in serenity with panoramic views of the Pacific Ocean.</p>
-                    </header>
+<head>
+    <title>Detta du kan äta - paleo för alla</title>
+    <meta charset="UTF-8" /> <!-- All text hanteras enligt denna teckenkodningen, t ex å,ä,ö -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <link href="../../css/reset.css" rel="stylesheet" />
+    <link href="../../css/style2.css" rel="stylesheet" />
+    <link href="../../css/kanAta.css" rel="stylesheet" />
+    <script src="/assets/js/index.js" type="module"></script>
+</head>
 
-                    <video width="480" height="360" controls>
-                        <source src="movies/pacifictrailsresort.mp4" type="video/mp4" />
-                        <p>beskrivande för funktionsnedsatta vad den handlar om</p>
-                    </video>
-                
-                </section>
-            </main>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Paleo för alla</h1>
+        </header>
 
-        </div>
-    </body>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Hem</a></li>
+                <li><a href="../historia.html">Historia</a></li>
+                <li><a href="../recept/receptMiddag.html">Recept</a></li>
+                <li class="active"><a href="kanAta.html">Livsmedel</a></li>
+                <li><a href="../QandA.html">Q&A</a></li>
+            </ul>
+            <hr>
+        </nav>
+
+        <main>
+            <section>
+                <header>
+                    <h2>Detta gäller inom paleo</h2>
+                </header>
+
+                <table>
+                    <tr>
+                        <th id="kanAtas">Kan ätas</th>
+                        <th id="kanInteAtas">Kan inte ätas</th>
+                    </tr>
+                    <tr>
+                        <td>Kött</td>
+                        <td>Spannmål</td>
+                    </tr>
+                    <tr>
+                        <td>Nötter</td>
+                        <td>Mejeri</td>
+                    </tr>
+                    <tr>
+                        <td>Grönsaker</td>
+                        <td>Baljväxter</td>
+                    </tr>
+                    <tr>
+                        <td>Rotfrukter</td>
+                        <td>raffinerade produkter</td>
+                    </tr>
+                    <tr>
+                        <td>Frukt</td>
+                        <td>Halvfabrikat</td>
+                    </tr>
+                </table>
+
+            </section>
+        </main>
+
+    </div>
+</body>
 
 </html>
