@@ -27,5 +27,6 @@ async function fetchAndDisplayImage() {
     const imageElement = document.createElement('img');
     imageElement.src = imageUrl;
     imageElement.alt = 'Daily example of a paleo meal';
+    imageElement.width = 500;
     document.body.appendChild(imageElement);
 }
