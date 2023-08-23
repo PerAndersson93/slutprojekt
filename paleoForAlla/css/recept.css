@@ -179,6 +179,7 @@ img{
 @media(min-width:1000px) {
     p{
         max-width: 30rem;
+        text-align: justify;
     }
 
     #GorSaHar{
