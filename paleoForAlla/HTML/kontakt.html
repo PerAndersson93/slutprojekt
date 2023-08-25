@@ -1,42 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Historia - paleo för alla</title>
-        <meta charset="UTF-8"/> <!-- All text hanteras enligt denna teckenkodningen, t ex å,ä,ö -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
-        <link href="../css/reset.css" rel="stylesheet" />
-        <link href="../css/style2.css" rel="stylesheet" />
-        <script src="/assets/js/index.js" type="module"></script>
-    </head>
-    <body>
-        <div id="wrapper">
-            <header>
-                <h1>Paleo för alla</h1>
-            </header>
-            
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Hem</a></li>
-                    <li><a href="QandA.html">Q&A</a></li>
-                    <li><a href="recept/receptMiddag.html">Recept</a></li>
-                    <li><a href="kanAta/kanAta.html">Livsmedel</a></li>
-                    <li class="active"><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-                <hr>
-            </nav>
 
-            <main>
-                <section>
-                    <header>
-                        <h2>Kontakt</h2>
-                        <p>Har du några frågor eller av andra skäl vill höra av dig, fyll i formuläret!</p>
-                    </header>
+<head>
+    <title>Historia - paleo för alla</title>
+    <meta charset="UTF-8" /> <!-- All text hanteras enligt denna teckenkodningen, t ex å,ä,ö -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/style2.css" rel="stylesheet" />
+    <link href="../css/kontakt.css" rel="stylesheet" />
+    <script src="/assets/js/index.js" type="module"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Paleo för alla</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="QandA.html">Q&A</a></li>
+                <li><a href="recept/receptMiddag.html">Recept</a></li>
+                <li><a href="kanAta/kanAta.html">Livsmedel</a></li>
+                <li class="active"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+            <hr>
+        </nav>
+
+        <main>
+            <section>
+                <header>
+                    <h2>Kontakt</h2>
+                    <p>Har du några frågor eller av andra skäl vill höra av dig, fyll i formuläret!</p>
+                </header>
 
                 
-                </section>
-            </main>
 
-        </div>
-    </body>
+                <form method="post" action="kontakt.html">
+                    
+
+                        
+                        <p>
+                            <label for="FirstName">Namn:</label>
+                            <input type="text" name="firstname" id="FirstName" />
+                        </p>
+                        <p>
+                            <label for="Email">E-mail*:</label>
+                            <input type="email" name="email" id="Email" required pattern="\w+@\w+.+\w" />
+                        </p>
+                        <p>
+                            <label for="Comments">Kommentar:</label>
+                            <textarea name="comments" rows="6" cols="30" id="Comments"></textarea>
+                        </p>
+
+                        <p>Hur upplever du sajten?</p>
+
+                        <table>
+                            <tr>
+                            <td><label for="VeryGood">Dåligt</label></td>
+                            <td></td>
+                            </td>
+                            <td><label for="Average">Medel</label></td>
+                            <td></td>
+                            <td><label for="VeryPoor">Jätte bra</label></td>
+                            </tr>
+                            <tr>
+                            <td><input type="radio" name="radRating" value="5"
+                                id="VeryGood" /></td>
+                            <td><input type="radio" name="radRating" value="4" id="Good" /></td>
+                            <td><input type="radio" name="radRating" value="3"
+                                id="Average" /></td>
+                            <td><input type="radio" name="radRating" value="2" id="Poor" /></td>
+                            <td><input type="radio" name="radRating" value="1"
+                                id="VeryPoor" /></td>
+                            </tr>
+                        </table>
+
+                        <p>
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Clear" />
+                        </p>
+                    
+                </form>
+
+            </section>
+        </main>
+
+    </div>
+</body>
 
 </html>
