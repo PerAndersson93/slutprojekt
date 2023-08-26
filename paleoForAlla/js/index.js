@@ -8,6 +8,6 @@ async function fetchAndDisplayImage() {
 }
 
 
-if (window.location.pathname == '/index.html')
+if (window.location.pathname == '/index.html' || window.location.pathname == '/' )
     fetchAndDisplayImage();
 
