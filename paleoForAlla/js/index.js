@@ -30,3 +30,5 @@ async function fetchAndDisplayImage() {
     imageElement.width = 500;
     document.body.appendChild(imageElement);
 }
+
+

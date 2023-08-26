@@ -1,0 +1,56 @@
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    max-width: 30rem;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1.8rem;
+    background-color: rgb(255, 255, 204);
+    font-family: Rowdies-Regular;
+    color: rgb(58, 58, 58);
+  }
+
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: rgb(255, 255, 204);
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30rem;
+    padding: 0 18px;
+    background-color: rgb(255, 255, 204);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: IndieFlower;
+  }
+
+
+
+  @media(min-width:700px) {
+    .collapsible {
+        max-width: 35rem;
+    }
+    .content {
+        max-width: 35rem;
+    }
+}
+
+@media(min-width:1000px) {
+    .collapsible {
+        max-width: 50rem;
+    }
+    .content {
+        max-width: 50rem;
+    }
+}
